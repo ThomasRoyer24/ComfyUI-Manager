@@ -30,7 +30,7 @@ if comfy_path is None:
 
 sys.path.append(comfy_path)
 
-import utils.extra_config
+#import utils.extra_config
 import cm_global
 import manager_core as core
 from manager_core import unified_manager
@@ -129,8 +129,8 @@ class Ctx:
             return
 
         extra_model_paths_yaml = os.path.join(user_directory, 'extra_model_paths.yaml')
-        if os.path.exists(extra_model_paths_yaml):
-            utils.extra_config.load_extra_path_config(extra_model_paths_yaml)
+        #if os.path.exists(extra_model_paths_yaml):
+        #    utils.extra_config.load_extra_path_config(extra_model_paths_yaml)
 
         core.update_user_directory(user_directory)
 
